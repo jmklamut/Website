@@ -43,75 +43,80 @@
             <h1>Projects</h1>
         </div>
         <div class="projects-cards">
-            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/MazeProject'">
-                <div class="info">
-                  <i class='bx bxl-c-plus-plus'></i>
-                    <h1>Mouse and Maze</h1>
+            <div class="card" onclick = "window.location.href='ML_SolDef.pdf'">
+                <div class = "info">
+                    <i class='bx bxs-microchip'></i>
+                    <h1>VGG19 with SVM for Resistor Defect Detection using the SolDef AI Dataset</h1>
                     <p>
-                        One of my first projects as a Computer Engineer, Mouse and Maze is a project that requires knowledge of 
-                        data structures and algorithims. Using C++, I used linked list and deques to navigate a "mouse" through a maze of 
-                        pixels. Once the mouse reaches the end, the program ends.
+                        In my current research, I am exploring machine learning approaches to detect tampered or defective PCB components. This project focuses on detecting 
+                        whether a resistor is defective or benign by analyzing its alignment relative to its soldering pad. Proper alignment is crucial, as misaligned components 
+                        may signal manufacturing defects or potential tampering. I use a pre-trained VGG19 deep learning model to extract features from images of the resistors. These 
+                        extracted features, which represent the visual and structural characteristics of the components, are then passed to a Support Vector Machine (SVM) classifier. The 
+                        SVM determines whether the resistor is classified as defective or non-defective based on these features. The final results need some more work as I only achieve an accuracy of 74
+                        percent. However, by automating defect detection, this project demonstrates the potential for machine learning to improve the efficiency, accuracy, and scalability of hardware inspections.
                     </p>
                 </div>
             </div>
-            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/JavaFame'">
-                <div class="info">
-                  <i class='bx bx-game'></i>
-                    <h1>Escape Room Video Game</h1>
+            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/QLearningGridWorld/tree/main'">
+                <div class = "info">
+                    <i class='bx bxs-car' ></i>
+                    <h1>Solving a Grid using Q-Learning</h1>
                     <p>
-                        The Escape Room Video Game is a fun and simple game. Frenchie the evil master mind traps a
-                        innocent player that has to escape three rooms inorder to win the game. Make sure time doesn't run out!
-                        I created this game using JavaFx.
-                    </p>
-                </div>
-
-            </div>
-            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/Website'">
-                <div class="info">
-                  <i class='bx bxs-keyboard'></i>
-                    <h1>This Website</h1>
-                    <p>
-                        Creating this website is a project in itself. It requires knowledge of HTML, CSS, and Javascript if
-                        you have some moving parts. 
+                        With the recent boom in machine learning, I took a class to familiarize myself with a related branch of the subject. Reinforcement learning is 
+                        very similar to machine learning, but instead of learning from labeled data, it focuses on decision-making by interacting with an environment to 
+                        maximize a cumulative reward. This class gave me valuable insights into how agents can learn complex behaviors through trial and error. The project 
+                        here showcases a reinforcement algorthim called q-learning. This off policy method is very good at finding the optimal path for a puzzle as seen in 
+                        the github attached.
+                        
                     </p>
                 </div>
             </div>
-            <div class="card" onclick = "window.location.href='https://github.com/itsmekhalidb/PlanesOverTrains'">
-                <div class="info">
-                    <i class='bx bxs-train'></i>
-                    <h1>Trains Project</h1>
+            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/SVMCreditCard'">
+                <div class = "info">
+                    <i class='bx bxs-credit-card' ></i>
+                    <h1>Credit Card Detection using SVM</h1>
                     <p>
-                        The Train Project stands out as one of the most challenging endeavors I've undertaken during my time at the University of Pittsburgh. 
-                        As a member of the Planes Over Trains team, consisting of six individuals, we took on the task of developing a comprehensive railway 
-                        system for Pittsburgh's Light Rail System. Specifically, my responsibility was to design the Hardware Wayside Controller, implemented 
-                        on Arduino. In the process, I gained proficiency in various Python applications, including PYQT5 and Pyserial, which were instrumental 
-                        in creating the software UI and establishing communication with Arduino.
+                        With the pervasive use of credit cards in online and offline transactions, the risk of fraudulent activities has become a significant concern for financial institutions, businesses, and consumers alike. 
+                        Credit Card Fraud detection is important in a variety of ways, and there are lots of methods of detection such as Rule-Based Systems or Machine Learning Models. I implemented a machine learning model, Support Vector Machine,
+                        to detect whether a credit card transaction is valid or in valid. I used a data set from kaggle.com which includes transaction information such as time and amount, as well as 28 features that were obtained through principal 
+                        component analysis to prevent any of the users’ personal information from being shown. The data is pre-processed to favor a machine learning based anomaly detection approach along with labeling for fraudulent transactions. I used
+                        scikit libraries to create my machine learning model.   
                     </p>
                 </div>
             </div>
-            <div class="card" onclick = "window.location.href='https://www.youtube.com/watch?v=j5zRf-65aTM'">
-                <div class="info">
-                    <i class='bx bx-water'></i>
-                    <h1>Water Level Indicator Project</h1>
+            <div class="card" onclick = "window.location.href='https://github.com/ldt9/Autonomous-Racing-Robot'">
+                <div class = "info">
+                    <i class='bx bxs-flag-checkered' ></i>
+                    <h1>Autonomous Racing Robot</h1>
                     <p>
-                        I designed a water level indicator, showcasing a diverse set of skills. The primary objective of the indicator was to detect increasing water levels, 
-                        offering practical applications in scenarios such as regulating water flow in pipes. The initial phase involved sketching the schematic using LTSpice 
-                        to simulate circuit voltages at various points. Subsequently, I used Altium to design the PCB, and, upon having the final PCB layout, I proceeded to 
-                        solder the components together creating the final product.
+                        This project involves an autonomous robot capable of following walls using proximity sensors, with control facilitated through MQTT messages. Key features include the robot's autonomous wall-following 
+                        behavior, which allows it to navigate by detecting and following walls using its proximity sensors. Additionally, the robot communicates via MQTT for remote control and status updates, ensuring efficient 
+                        and flexible management. A Bluetooth user interface is also integrated, providing a convenient way for users to interact with the robot. Furthermore, the system includes real-time monitoring of motor RPMs, 
+                        allowing for precise tracking and adjustments during operation.
                     </p>
                 </div>
-            </div>      
-            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/TextToPDF'">
-                <div class="info">
-                    <i class='bx bxs-message-rounded'></i>
-                    <h1>Textidence</h1>
+            </div>
+            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/ICBM'">
+                <div class = "info">
+                    <i class='bx bxs-chess'></i>
+                    <h1>Interactive Chessboard Master</h1>
                     <p>
-                        The React Native application is designed to generate PDF reports based on Short Message Service (SMS) data stored in a local SQLite database. The app 
-                        retrieves SMS entries upon launch, allowing users to select a specific phone number from a dropdown menu. The selected number is used to filter the SMS data, 
-                        which is then dynamically incorporated into an HTML template. The HTML content is converted into a PDF file using the RNHTMLtoPDF library. Users are presented 
-                        with the option to view or share the generated PDF. The app features a user-friendly interface with a title section, a "Generate PDF" button, and a dropdown 
-                        menu for selecting phone numbers. The application seamlessly interacts with the local database, providing an intuitive and efficient means for users to generate 
-                        and manage PDF reports based on their SMS data.
+                        The ICBM is an interactive chessboard that seeks to provide chess players with a way to play against an chess engine opponent on a physical board. With chess's historied origins coming from 
+                        physical boards, and modern chess being centered increasingly more around digital/online chess, this chessboard seeks to bridge that gap. Using this board, a player can play against 
+                        another human or an chess engine opponent of variable difficulty. The board includes certain amenities such as a built-in clock, a mechanical arm for the chess engine to interact with the clock, and an 
+                        array of LED inside the board. The main purpose of the LEDs is to light up certain squares on the board to visually display the chess engine opponent's move. The human player will then move 
+                        the AI's pieces according to the squares lit up. Finally, the board contains a small LCD screen which functions as a UI for communicating with the AI. 
+                    </p>
+                </div>
+            </div>
+            <div class="card" onclick = "window.location.href='https://www.youtube.com/shorts/SgHpCDqaEf4'">
+                <div class = "info">
+                    <i class='bx bx-radio'></i>
+                    <h1>Text to Morse Code</h1>
+                    <p>
+                        This project objective was to be able to convert plaintext into morse code. I accomplishmented this goal using GNU Radio Compainion. Based in a Linux enviorment, I used python 
+                        to parse a string into indivdual caharcters that were then labeled to a sequence of dashes and dots. The dashes and dots were then appended to an output vector. This pyhton script 
+                        was then turned into a python bloack in the gnu radio enviroment. The output vector was then resampled and made into a complex value to be sent over the radio.
                     </p>
                 </div>
             </div>
@@ -130,66 +135,74 @@
                     </p>
                 </div>
             </div>
-            <div class="card" onclick = "window.location.href='https://www.youtube.com/shorts/SgHpCDqaEf4'">
-                <div class = "info">
-                    <i class='bx bx-radio'></i>
-                    <h1>Text to Morse Code</h1>
+            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/TextToPDF'">
+                <div class="info">
+                    <i class='bx bxs-message-rounded'></i>
+                    <h1>Textidence</h1>
                     <p>
-                        This project objective was to be able to convert plaintext into morse code. I accomplishmented this goal using GNU Radio Compainion. Based in a Linux enviorment, I used python 
-                        to parse a string into indivdual caharcters that were then labeled to a sequence of dashes and dots. The dashes and dots were then appended to an output vector. This pyhton script 
-                        was then turned into a python bloack in the gnu radio enviroment. The output vector was then resampled and made into a complex value to be sent over the radio.
+                        The React Native application is designed to generate PDF reports based on Short Message Service (SMS) data stored in a local SQLite database. The app 
+                        retrieves SMS entries upon launch, allowing users to select a specific phone number from a dropdown menu. The selected number is used to filter the SMS data, 
+                        which is then dynamically incorporated into an HTML template. The HTML content is converted into a PDF file using the RNHTMLtoPDF library. Users are presented 
+                        with the option to view or share the generated PDF. The app features a user-friendly interface with a title section, a "Generate PDF" button, and a dropdown 
+                        menu for selecting phone numbers. The application seamlessly interacts with the local database, providing an intuitive and efficient means for users to generate 
+                        and manage PDF reports based on their SMS data.
                     </p>
                 </div>
             </div>
-            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/ICBM'">
-                <div class = "info">
-                    <i class='bx bxs-chess'></i>
-                    <h1>Interactive Chessboard Master</h1>
+            <div class="card" onclick = "window.location.href='https://www.youtube.com/watch?v=j5zRf-65aTM'">
+                <div class="info">
+                    <i class='bx bx-water'></i>
+                    <h1>Water Level Indicator Project</h1>
                     <p>
-                        The ICBM is an interactive chessboard that seeks to provide chess players with a way to play against an chess engine opponent on a physical board. With chess's historied origins coming from 
-                        physical boards, and modern chess being centered increasingly more around digital/online chess, this chessboard seeks to bridge that gap. Using this board, a player can play against 
-                        another human or an chess engine opponent of variable difficulty. The board includes certain amenities such as a built-in clock, a mechanical arm for the chess engine to interact with the clock, and an 
-                        array of LED inside the board. The main purpose of the LEDs is to light up certain squares on the board to visually display the chess engine opponent's move. The human player will then move 
-                        the AI's pieces according to the squares lit up. Finally, the board contains a small LCD screen which functions as a UI for communicating with the AI. 
+                        I designed a water level indicator, showcasing a diverse set of skills. The primary objective of the indicator was to detect increasing water levels, 
+                        offering practical applications in scenarios such as regulating water flow in pipes. The initial phase involved sketching the schematic using LTSpice 
+                        to simulate circuit voltages at various points. Subsequently, I used Altium to design the PCB, and, upon having the final PCB layout, I proceeded to 
+                        solder the components together creating the final product.
                     </p>
                 </div>
             </div>
-            <div class="card" onclick = "window.location.href='https://github.com/ldt9/Autonomous-Racing-Robot'">
-                <div class = "info">
-                    <i class='bx bxs-flag-checkered' ></i>
-                    <h1>Autonomous Racing Robot</h1>
+            <div class="card" onclick = "window.location.href='https://github.com/itsmekhalidb/PlanesOverTrains'">
+                <div class="info">
+                    <i class='bx bxs-train'></i>
+                    <h1>Trains Project</h1>
                     <p>
-                        This project involves an autonomous robot capable of following walls using proximity sensors, with control facilitated through MQTT messages. Key features include the robot's autonomous wall-following 
-                        behavior, which allows it to navigate by detecting and following walls using its proximity sensors. Additionally, the robot communicates via MQTT for remote control and status updates, ensuring efficient 
-                        and flexible management. A Bluetooth user interface is also integrated, providing a convenient way for users to interact with the robot. Furthermore, the system includes real-time monitoring of motor RPMs, 
-                        allowing for precise tracking and adjustments during operation.
+                        The Train Project stands out as one of the most challenging endeavors I've undertaken during my time at the University of Pittsburgh. 
+                        As a member of the Planes Over Trains team, consisting of six individuals, we took on the task of developing a comprehensive railway 
+                        system for Pittsburgh's Light Rail System. Specifically, my responsibility was to design the Hardware Wayside Controller, implemented 
+                        on Arduino. In the process, I gained proficiency in various Python applications, including PYQT5 and Pyserial, which were instrumental 
+                        in creating the software UI and establishing communication with Arduino.
                     </p>
                 </div>
             </div>
-            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/SVMCreditCard'">
-                <div class = "info">
-                    <i class='bx bxs-credit-card' ></i>
-                    <h1>Credit Card Detection using SVM</h1>
+            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/Website'">
+                <div class="info">
+                  <i class='bx bxs-keyboard'></i>
+                    <h1>This Website</h1>
                     <p>
-                        With the pervasive use of credit cards in online and offline transactions, the risk of fraudulent activities has become a significant concern for financial institutions, businesses, and consumers alike. 
-                        Credit Card Fraud detection is important in a variety of ways, and there are lots of methods of detection such as Rule-Based Systems or Machine Learning Models. I implemented a machine learning model, Support Vector Machine,
-                        to detect whether a credit card transaction is valid or in valid. I used a data set from kaggle.com which includes transaction information such as time and amount, as well as 28 features that were obtained through principal 
-                        component analysis to prevent any of the users’ personal information from being shown. The data is pre-processed to favor a machine learning based anomaly detection approach along with labeling for fraudulent transactions. I used
-                        scikit libraries to create my machine learning model.   
+                        Creating this website is a project in itself. It requires knowledge of HTML, CSS, and Javascript if
+                        you have some moving parts. 
                     </p>
                 </div>
-            </div>
-            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/QLearningGridWorld/tree/main'">
-                <div class = "info">
-                    <i class='bx bxs-car' ></i>
-                    <h1>Solving a Grid using Q-Learning</h1>
+            </div>   
+            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/JavaFame'">
+                <div class="info">
+                  <i class='bx bx-game'></i>
+                    <h1>Escape Room Video Game</h1>
                     <p>
-                        With the recent boom in machine learning, I took a class to familiarize myself with a related branch of the subject. Reinforcement learning is 
-                        very similar to machine learning, but instead of learning from labeled data, it focuses on decision-making by interacting with an environment to 
-                        maximize a cumulative reward. This class gave me valuable insights into how agents can learn complex behaviors through trial and error. The project 
-                        here showcases a reinforcement algorthim called q-learning. This off policy method is very good at finding the optimal path for a puzzle as seen in 
-                        the github attached.
-                        
+                        The Escape Room Video Game is a fun and simple game. Frenchie the evil master mind traps a
+                        innocent player that has to escape three rooms inorder to win the game. Make sure time doesn't run out!
+                        I created this game using JavaFx.
+                    </p>
+                </div>
+            </div>   
+            <div class="card" onclick = "window.location.href='https://github.com/jmklamut/MazeProject'">
+                <div class="info">
+                  <i class='bx bxl-c-plus-plus'></i>
+                    <h1>Mouse and Maze</h1>
+                    <p>
+                        One of my first projects as a Computer Engineer, Mouse and Maze is a project that requires knowledge of 
+                        data structures and algorithims. Using C++, I used linked list and deques to navigate a "mouse" through a maze of 
+                        pixels. Once the mouse reaches the end, the program ends.
                     </p>
                 </div>
             </div>
@@ -252,8 +265,6 @@
     <button class="scroll-top" onclick="scrollToTop()">
         <i class='bx bxs-up-arrow'></i>
     </button>
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
